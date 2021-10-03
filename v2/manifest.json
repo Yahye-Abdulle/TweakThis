@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+
+  "name": "TwwKit's Netflix Share My List",
+  "description": "Share your Netflix list with your friends and anyone!",
+  "version": "1.0",
+  
+  "browser_action": {
+   "default_icon": "icon.png",
+   "default_popup": "popup.html"
+  },
+  "content_scripts": [{
+	"matches": ["https://www.netflix.com/browse/my-list"],
+	"js": ["jquery.js","jquery.min.js" ,"content.js"]
+  }]
+}
